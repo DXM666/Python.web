@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<script src ="cal.js" type="text/javascript"></script>
+	<title>Calculator</title>
+	</head>
+	<body>
+		<div align="center" style="margin-top:40px">
+		<img src="{{url_for('static',filename='add.png')}}"><br>
+		</div>
+		<div align="center" style="margin-top:60px">
+			<form name="form1" method='POST'>
+					<input type="text" placeholder="加数" name="adder1" class="form-control" value="{{adder1}}">
+					+
+					<input type="text" placeholder="被加数" name="adder2"  class="form-control" value="{{adder2}}">
+					=
+					<input type="text" placeholder="总数" name="sum" readonly="readonly" class="form-control" value="{{message}}">
+				<input type="submit" class="btn btn-lg btn-info" value="计算">
+			</form>
+		</div>
+	</body>
+	<footer>
+		
+	</footer>
+</html>
